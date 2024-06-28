@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');</style>
+    <script src="/number/js/main.js"></script>
+    <script src = "/number/js/game.js"></script>
+    <link rel="stylesheet" href="/number/css/sty.css">
+    <title>숫자 기억하기 게임</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box">
+            <h1 class="title">✏️숫자 기억 게임✏️</h1>
+            <button class="custom-btn btn" id = startBtn>시작</button>
+            <button class="custom-btn btn" id = "gameInstructionsBtn" >게임방법</button>
+            <button class="custom-btn btn" id = "recordBtn">랭킹</button>
+        </div>
+    </div>
+
+    <div id = "gameInstructionsModal" class = "modal">
+        <span class = "close" id = "closeModal">&times;</span>
+        <h2>게임 방법</h2>
+        <div class = "step"><span class = "lv">1단계</span> 화면에 나타나는 숫자를 기억하세요.</div>
+        <div class = "step"><span class = "lv">2단계</span> 숫자가 사라지면, 기억한 숫자를 입력하세요.</div>
+        <div class = "step"><span class = "lv">3단계</span> 입력한 숫자가 맞으면, 다음 단계로 넘어갑니다. 틀리면 게임이 종료됩니다.</div>
+        <div class = "step"><span class = "lv">4단계</span> 단계가 올라갈수록 숫자의 길이가 늘어납니다. 최대한 많은 숫자를 기억해보세요!</div>
+    </div>
+    <div id = "overlay">
+        <div class="countdown" id="countdown"></div>
+    </div>
+    <div id = "record">
+        <span class = "recordclsoe" id = recordclose>&times;</span>
+        <h2>💎점수 랭킹💎</h2>
+        <ul id="scoreList" class="score-list"></ul>
+    </div>
+
+</body>
+
+</html>
